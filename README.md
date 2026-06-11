@@ -19,7 +19,20 @@ A D Flip-Flop is a sequential circuit that stores one bit of data. The output Q 
 | ↑          | 1 | 1        |
 
 ### Verilog Code
-![D Flip-Flop Code](Screenshots/dff_code.png)
+```verilog
+module d_ff(
+    input clk,
+    input d,
+    output reg q
+);
+
+always @(posedge clk)
+begin
+    q <= d;
+end
+
+endmodule
+
 
 ### Waveform
 ![D Flip-Flop Waveform](Screenshots/dff_waveform.png)
@@ -41,7 +54,26 @@ A JK Flip-Flop is a sequential circuit with four operations: hold, reset, set, a
 | 1 | 1 | Q̅        | Toggle    |
 
 ### Verilog Code
-![JK Flip-Flop Code](Screenshots/jkff_code.png)
+```verilog
+module jk_ff(
+    input clk,
+    input j,
+    input k,
+    output reg q
+);
+
+always @(posedge clk)
+begin
+    case({j,k})
+        2'b00: q <= q;
+        2'b01: q <= 0;
+        2'b10: q <= 1;
+        2'b11: q <= ~q;
+    endcase
+end
+
+endmodule
+
 
 ### Waveform
 ![JK Flip-Flop Waveform](Screenshots/jkff_waveform.png)
@@ -54,7 +86,20 @@ A JK Flip-Flop is a sequential circuit with four operations: hold, reset, set, a
 A 4-bit register stores four bits of data and updates its output on the positive edge of the clock signal.
 
 ### Verilog Code
-![Register Code](Screenshots/register_code.png)
+```verilog
+module register4(
+    input clk,
+    input [3:0] d,
+    output reg [3:0] q
+);
+
+always @(posedge clk)
+begin
+    q <= d;
+end
+
+endmodule
+
 
 ### Waveform
 ![Register Waveform](Screenshots/register_waveform.png)
@@ -79,7 +124,19 @@ A 4-bit Binary Counter increments its value by one on every rising edge of the c
 | ... | ... |
 
 ### Verilog Code
-![Counter Code](Screenshots/counter_code.png)
+```verilog
+module counter4(
+    input clk,
+    output reg [3:0] count
+);
+
+always @(posedge clk)
+begin
+    count <= count + 1;
+end
+
+endmodule
+
 
 ### Waveform
 ![Counter Waveform](Screenshots/counter_waveform.png)
