@@ -32,7 +32,7 @@ begin
 end
 
 endmodule
-
+```
 
 ### Waveform
 ![D Flip-Flop Waveform](Screenshots/dff_waveform.png)
@@ -73,11 +73,11 @@ begin
 end
 
 endmodule
-
+```
 
 ### Waveform
 ![JK Flip-Flop Waveform](Screenshots/jkff_waveform.png)
-
+a
 ---
 
 ## 4-Bit Register
@@ -99,7 +99,7 @@ begin
 end
 
 endmodule
-
+```
 
 ### Waveform
 ![Register Waveform](Screenshots/register_waveform.png)
@@ -136,7 +136,7 @@ begin
 end
 
 endmodule
-
+```
 
 ### Waveform
 ![Counter Waveform](Screenshots/counter_waveform.png)
