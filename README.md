@@ -77,7 +77,7 @@ endmodule
 
 ### Waveform
 ![JK Flip-Flop Waveform](Screenshots/jkff_waveform.png)
-a
+
 ---
 
 ## 4-Bit Register
@@ -165,38 +165,6 @@ All circuits were successfully designed, simulated, and verified.
 ✅ Testbench Verification
 
 ✅ Waveform Analysis
-
-### Structure
-
-Task 3 - Sequential Circuits 
-│
-├── Objective
-│
-├── D Flip-Flop
-│   ├── Verilog Code
-│   ├── Waveform
-│   └── Truth Table
-│
-├── JK Flip-Flop
-│   ├── Verilog Code
-│   ├── Waveform
-│   └── Truth Table
-│
-├── 4-Bit Register
-│   ├── Verilog Code
-│   ├── Waveform
-│   └── Description
-│
-├── 4-Bit Counter
-│   ├── Verilog Code
-│   ├── Waveform
-│   └── Counting Sequence
-│
-├── Tools Used
-│
-├── Results
-│
-└── Conclusion
 
 ## Conclusion
 
